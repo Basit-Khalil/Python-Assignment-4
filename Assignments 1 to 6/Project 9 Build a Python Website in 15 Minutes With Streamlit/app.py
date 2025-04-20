@@ -31,7 +31,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     if st.button("✨ New Quote"):
         st.session_state.current_quote = random.choice(quotes)
-        st.experimental_rerun()
+        st.rerun()
 
 with col2:
     if st.button("❤️ Save to Favorites"):
